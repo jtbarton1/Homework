@@ -1,0 +1,112 @@
+#1.
+    XYZPerson.h
+	-----------
+	
+	#import <Foundation/Foundation.h>
+	
+	@interface XYZPerson : NSObject
+	
+	@end
+
+	
+	
+	XYZPerson.m
+	-----------
+	
+	#import "XYZPerson.h"
+
+	@implementation XYZPerson
+
+	@end
+
+-------------------------------------------------------
+
+#2.
+	XYZPerson.h
+	-----------
+
+	#import <Foundation/Foundation.h>
+
+	@interface XYZPerson : NSObject
+
+	@property NSString *firstName;
+	@property NSString *lastName;
+	@property NSDate *birthDate;
+
+	@end
+
+
+	XYZPerson.m
+	-----------
+
+	#import "XYZPerson.h"
+
+	@implementation XYZPerson
+
+	@end
+
+--------------------------------------------------------
+
+#3.
+	XYZPerson.h
+	-----------
+
+	#import <Foundation/Foundation.h>
+
+	@interface XYZPerson : NSObject
+
+	@property NSString *firstName;
+	@property NSString *lastName;
+	@property NSDate *birthDate;
+
+	-(void)sayHello;
+
+	@end
+
+
+	XYZPerson.m
+	-----------
+
+	#import "XYZPerson.h"
+
+	@implementation XYZPerson
+
+	-(void)sayHello {
+		NSLog(@"Hello, World");
+	}
+
+	@end
+
+---------------------------------------------------------
+
+#4.
+	XYZPerson.h
+	
+	#import<Foundation/Foundation.h>
+
+	@interface XYZPerson : NSObject
+
+	@property NSString *firstName;
+	@property NSString *lastName;
+	@property NSDate *birthDate;
+
+	-(void)sayHello;
+	+(void)person;
+	+(void)personWithName:(NSString *)name;
+
+	@end
+
+
+	XYZPerson.m
+
+	#import "XYZPerson.h"
+	
+	@implementation XYZPerson
+
+	-(void)sayHello {
+		NSLog(@"Hello, World");
+	}
+
+	@end
+
+---------------------------------------------------------
